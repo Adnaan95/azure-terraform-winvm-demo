@@ -1,0 +1,19 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+
+*.tfstate
+*.tfstate.*
+
+# Variable files containing secrets
+terraform.tfvars
+*.auto.tfvars
+
+# Local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# VS Code
+.vscode/
