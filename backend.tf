@@ -2,7 +2,7 @@ terraform {
   backend "azurerm" {
     resource_group_name  = "terraformstate-rg"
     storage_account_name = "tfstate39201"
-    container_name       = "tfstate-container"
+    container_name       = "tfstate-container2"
     key                  = "infra/primary.tfstate"
     use_azuread_auth     = true
   }
