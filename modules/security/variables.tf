@@ -7,3 +7,7 @@ variable "rg01_name"{
     type = string
     description = "This variable allows for a name to be assigned to a resource group."
 }
+
+variable "subnet_id" {
+  type = string
+}
