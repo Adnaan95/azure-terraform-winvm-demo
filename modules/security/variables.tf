@@ -1,0 +1,9 @@
+variable "location" {
+    type = string
+    description = "This is the assigned location of the resource."
+}
+
+variable "rg01_name"{
+    type = string
+    description = "This variable allows for a name to be assigned to a resource group."
+}
