@@ -20,3 +20,7 @@ sensitive = true
 variable "subnet_id" {
 type = string
 }
+
+variable "source_image_id" {
+type = string
+}

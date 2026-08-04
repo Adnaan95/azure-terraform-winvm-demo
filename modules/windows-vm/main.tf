@@ -33,16 +33,19 @@ resource "azurerm_windows_virtual_machine" "prod-winvm-01" {
     azurerm_network_interface.prod-winvm-01-nic.id
   ]
 
+  lifecycle {
+ignore_changes = [
+admin_username,
+admin_password
+]
+}
+
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
   }
 
-source_image_reference {
-  publisher = "MicrosoftWindowsDesktop"
-  offer     = "Windows-10"
-  sku       = "win10-22h2-avd-g2"
-  version   = "latest"
+source_image_id = var.source_image_id
 }
-}
+
 
