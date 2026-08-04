@@ -46,6 +46,10 @@ admin_password
   }
 
 source_image_id = var.source_image_id
+
+secure_boot_enabled = true
+vtpm_enabled = true
+
 }
 
 
